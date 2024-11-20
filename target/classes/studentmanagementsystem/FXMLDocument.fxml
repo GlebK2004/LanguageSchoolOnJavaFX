@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagementsystem.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="409.0" prefWidth="298.0" styleClass="left-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+
+                  <Label layoutX="27.0" layoutY="270.0" text="Underground language club" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="229.0" fitWidth="232.0" layoutX="35.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../ULC_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="298.0" prefHeight="409.0" prefWidth="291.0" styleClass="right-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+
+                  <Label layoutX="54.0" layoutY="100.0" text="Добро пожаловать!">
+                     <font>
+                        <Font name="Tahoma Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" layoutX="39.0" layoutY="175.0" onAction="#loginAdmin" prefHeight="30.0" prefWidth="220.0" promptText="Логин" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <PasswordField fx:id="password" layoutX="39.0" layoutY="218.0" onAction="#loginAdmin" prefHeight="30.0" prefWidth="220.0" promptText="Пароль" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <Button fx:id="loginBtn" layoutX="39.0" layoutY="270.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Войти" />
+                  <Button fx:id="close" layoutX="240.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="55.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0">
+                     <graphic>
+
+                     </graphic>
+                  </Button>
+                  <Button fx:id="loginBtn1" layoutX="199.0" layoutY="369.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="26.0" prefWidth="77.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Создать" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
