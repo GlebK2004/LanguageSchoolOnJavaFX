@@ -1,2 +1,2 @@
 # StudentManagementSystem
- Student Management System Project in JavaFX
+ This is my pet project - Student Management System Project in JavaFX (course work)
